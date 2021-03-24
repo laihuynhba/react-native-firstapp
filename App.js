@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Inputs from './inputs';
 import List from './List';
 import PresentationalComponent from './PresentationalComponent';
+import ScrollViewExample from './ScrollView';
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
     //   <View style={styles.blackbox} />
     // </View>
     // <List />
-    <Inputs />
+    // <Inputs />
+    <ScrollViewExample />
   )
 }
 
