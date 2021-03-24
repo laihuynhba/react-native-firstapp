@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import ImagesExample from './image_example';
 import Inputs from './inputs';
 import List from './List';
 import PresentationalComponent from './PresentationalComponent';
@@ -15,7 +16,8 @@ const App = () => {
     // </View>
     // <List />
     // <Inputs />
-    <ScrollViewExample />
+    //<ScrollViewExample />
+    <ImagesExample />
   )
 }
 
