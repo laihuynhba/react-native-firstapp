@@ -1,19 +1,15 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native"
+import { Text, TouchableOpacity, View } from "react-native"
+import { Actions } from "react-native-router-flux";
 
-class Home extends Component {
-    state = {
-        myState: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,'
+const Home = () => {
+    const goToAbout = () => {
+        Actions.about()
     }
-    updateState = () => this.setState({ myState: 'The state updated' })
-    render() {
-        return (
-            <View>
-                <Text onPress = {this.updateState}>
-                    { this.state.myState }
-                </Text>
-            </View>
-        )
-    }
+    return (
+        <TouchableOpacity style = {{ margin: 128 }} onPress={goToAbout}>
+            <Text>This is HOME!</Text>
+        </TouchableOpacity>
+    )
 }
 export default Home;
